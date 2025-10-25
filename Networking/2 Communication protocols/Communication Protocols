@@ -1,0 +1,25 @@
+Communication protocol:
+How the communication happens b/w two systems.
+![alt text](image.png)
+![alt text](image-1.png)
+
+
+How http works.
+First TCP connection will be made. Once it gets response then it makes a request for something then it gets the response.
+TCP connection: 3 way handshake. It'll check if the dev B is available, if yes then it sends the ack, then dev A send ack again makes sure the dev B is aware of it. coz if some packets are lost then dev B is going to send that again.
+
+UDP connection: used for video conferencing and used for heavy traffic.
+
+HTTP/3(QUIC): its used in youtube, it establishes the udp connection, it'll not establish the tcp connection, it directly sends the packets. used in IOT, virtual reality.
+It'll do header compression, faster, improved performance, better network congestion.
+
+HTTPS: Its more secure. Along with TCP, it adds one more connection SSL and TLS(Transport layered security) using public key and session keys. which will help in sending encrypted data using public key, and the client can decrpty the data.
+
+webcocket: For live data, live chat, live stream, live stock info. It uses HTTP upgrade.
+
+SMTP: Mails will be delivered to SMTP server then it checks the address.
+
+FTP: File transfer protocol.
+
+
+

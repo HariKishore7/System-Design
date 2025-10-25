@@ -1,0 +1,70 @@
+When we search anything like google.com,
+
+The device(laptop/mobile) sends the request to the router -> then it send to the Internet service provider(ISP) -> then it send it to the Domain name server(DNS) where we get the IP address for what we are searching for. The DNS(Domain and IP address mapping will be maintained in DNS) sends the IP address back to ISP -> then ISP to Router -> Then router to the device.
+
+Now the device is going to send the recieved IP address to router-> ISP-> to the server where the website was available. Then the server searches for the specific webpage, then it creates a webpage(HTML. CSS, JS) and renders it back on the client device.
+![alt text](image-2.png)
+
+www.google.com
+"." -> root domain
+com -> top level domain(org, edu, in, edu)
+google -> second level domain(facebook.com, amazon.com, flipkart.com)
+www -> third-level domain(download.mc.com, sales.hari.org)
+
+So, everytime we search for something, it will check from top level to low level, so first it looks for .com servers, then looks for google.com, then looks for www.google.com associated with it.
+
+The servers are connected using ISP's and every ISP used to have a local ISP which are maintaniend as a hub within every locality. And they will be connected to our routers. And throught inida ther will be a regional ISP, and globally seperate ISPs will be present like below image, as every country have their own set of conditions.
+![alt text](image.png)
+
+Also the global ISP's will be used to how and what information can be communicated via ISP's.
+Across the world, the fiber optics is used to connect the world.
+
+Whenever we search for something, it'll not directly go to the DNS.
+first it'll check in local browsesr cache, if not availbale then it'll check service worker.
+Then operating system
+Then it checks router,
+then ISP's
+Then DNS
+
+Lets say if a person is trying to access a global page which resides in another country and also something like if the payment is going to be done on the othe rvountry and they take sometime to reflect back on our devices, the servers are going to reach out to the regional ISP's and then to multiple global ISP's then the regional ISP's of that country then it'll fetch it from that server.
+
+To reduce these many connections few bug companies did something like peering. Means they keep few of their servers in every country so whenever we try to access something, the servers don't need to go thur multiple steps and fetch. it fetches from the nearest server like below. This is called as peering.
+![alt text](image-1.png)
+
+When the search is done, there is something done on the background b/w the client and server. If the server is availbale or not and looks for acknowledgement(TCP)
+![alt text](image-3.png)
+
+SSL handshake will be used as a certificate of secure communications like HTTPS. For http, it'll not make a ssl handshake
+![alt text](image-4.png)
+
+Below is for SSL how it works, it used certificate and client keys to encrypt the data.
+![alt text](image-5.png)
+
+If the server returns something like data(HTML, CSS, JS). How is the browser is going to render that and in which order is it going to render that. below are the steps and image.
+![alt text](image-6.png)
+1. loading necessary data
+2. then executes the script JS
+3. then renders the data
+4. then paints the page.
+
+when we requet a page, first it'll do get html, then Until the whole css loads, it'll block the rendering. I'll not show anyhting in the ui
+JS is parser blocking, it'll completed every line before going to next line, it download and parses every line then only it'll show something on the screen, after this it'lll build a dom node tree.
+
+DOM & CSSOM how they're created
+![alt text](image-7.png)
+
+Finally both DOM and CSSOM merges then the render tree will be creted like above.
+
+JS Execution:
+![alt text](image-8.png)
+
+If JS is parsing, means it's doing some parsing so everything will halt =, as JS is a single threaded synchronous.
+![alt text](image-9.png)
+![alt text](image-10.png)
+![alt text](image-11.png)
+![alt text](image-12.png)
+
+
+
+
+
