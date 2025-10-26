@@ -1,0 +1,46 @@
+REST API:
+Overview of REST APIs
+![alt text](image.png)
+
+Benefits of REST:
+Ease of use
+stateless -> it dones't store anything all it does is gives the result whatever time user wants
+felxibility with data
+scalability
+uniform interface
+caching
+separation of concerns
+interoperability - language agnostic
+ease of testing
+security
+
+HTTP Request/Response:
+![alt text](image-1.png)
+
+URL Parts
+![alt text](image-2.png)
+
+Methods:
+Post, get, put/patch, delete
+Head -> it doesn't modify anything, it just reads the headers
+Options -> used for security purposes, if the api is allowed to make the request to diff domain. Like from flipkart -> google
+Connect -> It used to establish the connection b/w the resources, so it doesn't need to do handshake everytime it requests something.
+Trace -> used to do some tracing, and for diagnosis
+
+Request Headers:
+![alt text](image-3.png)
+![alt text](image-4.png)
+
+Response Headers
+![alt text](image-5.png)
+![alt text](image-6.png)
+
+Status codes
+![alt text](image-7.png)
+1xx - Informational -> 100: Continue, 101: Switching
+2xx - Success -> 200: OK, 201: Created , 202: Accepted, 204: No Content , 206: Partial Content
+3xx - Redirection -> 301: Moved Permanently, 302: Temporary Moving, 307: 302 = Retains Method 308: 301: Retain Method
+4xx - Client Error -> 400: Bad request, 401: Unauthorized, 403: Authorization error, 404: Not Found, 405: Method Not allowed, 429: Concurrent Request
+5xx - Server Error -> 500: Internal Server Error, 502: Bad Gateway, 503: Service Unavailable, 504: Gateway Timeout, 507: Insufficient Storage
+
+Refer for a server creation using express.js: https://github.com/namastedev/namaste-frontend-system-design/blob/master/Networking/RestApi/index.js
