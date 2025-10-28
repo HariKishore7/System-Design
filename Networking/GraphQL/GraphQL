@@ -1,0 +1,28 @@
+Graph Query languge(GraphQL)
+The data will be represented in a way like Graph.
+
+
+Benefits:
+Avoids overfetching
+Avoids underfetching
+Better Mobile performance
+Efficiency & Precision
+Declarative data fetching
+Structured/Hierarichal Structure
+Strongly typed
+Introspection
+Real time capabilities -> subscription
+
+
+REST VS GRAPHQL
+![alt text](image.png)
+![alt text](image-1.png)
+
+GraphQL Building blocks
+Schema/Types
+Query/Mutation
+Resolver
+
+![alt text](image-2.png)
+
+Refer the REPO: https://github.com/namastedev/namaste-frontend-system-design/tree/master/Networking/GraphQl
