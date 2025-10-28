@@ -1,0 +1,21 @@
+gRPCS: google Remote procedure call
+
+If two servers, the server can access the function available on other server.
+Used for load balancing, tracing, authentication, health checking.
+
+![alt text](image.png)
+
+![alt text](image-1.png)
+
+![alt text](image-2.png)
+
+Benefits
+-Less CPU resources
+-can be used in mobiles
+-faster
+
+![alt text](image-3.png)
+
+![alt text](image-4.png)
+![alt text](image-5.png)
+![alt text](image-6.png)
