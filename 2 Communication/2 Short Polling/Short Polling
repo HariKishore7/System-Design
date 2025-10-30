@@ -1,0 +1,14 @@
+Short Polling:
+![alt text](image.png)
+
+The client is going to keep on asking the data or checking the data from server is short polling.
+Like for every 5sec, like does server have a new notification or new data, if yes return it. if no data, server informs no new notification.
+
+Every connection is a short live connection
+No Persistent connection
+Less resource utility
+problem when scaling happens, as if 1 million pings for every 5sec for some new data.
+
+Can be done using setInterval on frontend, like keep on hitting the API for every 5 seconds.
+
+Refer: https://github.com/namastedev/namaste-frontend-system-design/blob/master/CommunicationTechniques/shortPolling/index.html

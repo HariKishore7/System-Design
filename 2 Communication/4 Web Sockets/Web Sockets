@@ -1,0 +1,10 @@
+Web Socket
+![alt text](image.png)
+
+https://github.com/namastedev/namaste-frontend-system-design/blob/master/CommunicationTechniques/webSocket/index.js
+
+Refer:
+https://socket.io/docs/v4/tutorial/introduction
+https://www.npmjs.com/package/ws
+
+Socket.io website notes:

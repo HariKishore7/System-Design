@@ -1,0 +1,7 @@
+Communication techniques
+1. Short polling - The client keeps on checking if there is anything to recieve. The result will be sent all at once when ready.
+2. Long polling - The result will be sent only once when ready.
+3. Websocket - The result will be sent fromm server whichever is ready and processes other stuff in background
+4. Server sent event - Used for notifications
+5. Webhooks - if any activity is done, hooks are going to get triggered automatically.
+

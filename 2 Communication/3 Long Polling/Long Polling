@@ -1,0 +1,10 @@
+Long Polling
+![alt text](image.png)
+
+Single Long lived connection
+Connection is open until you get new data or timeout
+
+Cons:
+Large no.of connection then more load.
+
+Refer: https://github.com/namastedev/namaste-frontend-system-design/blob/master/CommunicationTechniques/longPolling/index.html

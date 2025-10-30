@@ -1,0 +1,7 @@
+Server Side Events:
+This opens a long lived unidirectional communication
+Whatever data is there on server, it send whenever new data is available.
+
+![alt text](image.png)
+
+https://github.com/namastedev/namaste-frontend-system-design/blob/master/CommunicationTechniques/sse/index.js
