@@ -1,0 +1,11 @@
+XSS:
+If someone from outside can inject any kind of script in your website and do something unintended(stealing cookie, data,
+critical information), it is known as XSS attack.
+Malicious scripts can be injected from url, forms, input fields etc.
+
+![alt text](image.png)
+![CAPTURING KEYSTROKE](image-1.png)
+![Staling critical info](image-2.png)
+![Phishing attack](image-3.png)
+\
+Refer: https://github.com/namastedev/namaste-frontend-system-design/tree/master/Security/XSS
