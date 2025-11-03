@@ -1,0 +1,7 @@
+Security Headers:
+
+X-Powered-By: It tells the client which server we're using
+Referrer-Policy: Whenever we navigate from one webpage to another, it will show from which page we came from, like from instagram to linkedin.
+X-Content-Type-Options: When user wants jpg, and the browser has html, it will try to sniff and send it to client.
+X-XSS-Protection: The HTTP  X-XSS-Protection  response header is a feature of Chrome and Safari that stops pages from loading when they detect reflected cross-site scripting (XSS) attacks.
+HSTS: HTTP Strict transport security, if we hit with http://, the server helps to make it like https://
