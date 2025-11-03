@@ -1,0 +1,12 @@
+Server-Side Request Forgery (SSRF):
+
+![alt text](image.png)
+![Unvalidated user input](image-1.png)
+
+Whitelisting: It will ensure that specified URL's are only allowed to make an API.
+![Whitelisting](image-2.png)
+
+Insufficient Access control.
+![alt text](image-3.png)
+
+

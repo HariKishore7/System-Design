@@ -1,0 +1,12 @@
+Secure Communication(HTTPs):
+
+Data encryption - Client requests some data and then server sends data. That data is unreadable
+Authentication - Appropriate authorities provide certificate and that certificate is used when client requests some data(SSL and TLS certificate)
+Data integrity - Ensured the data is not manipulated. some cryptographic methods | checksum used to ensure data integrity. It internally uses MAC(message authentication code)
+Protection Against Phishing - If http:// it means mostly a phishinh website, if https:// mostly its secured.
+Data Privacy -Whatever data goes from client to server are secured, even from router -> ISP, nobody is able to track the data transfer or the URL's client is hitting.
+Compliance with Security Standards - If no https:// it is not going to serve the request. Ex: PCI DSS(Payment card Industry data security standard)
+Trust and Reputation -In the web browser it gives lock button besides URL, means its secured and trusted.
+Search Engine Ranking -Https:// will be having more rank than http://
+Protection Against Browser Warnings -It gives warning like do you want to proceed with this website as its http://
+Faster website loading(HTTP2) -It benefits HTTP2, so that it provides faster loading.

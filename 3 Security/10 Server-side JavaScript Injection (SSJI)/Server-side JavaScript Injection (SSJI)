@@ -1,0 +1,15 @@
+Server-side JavaScript Injection (SSJI):
+
+![alt text](image.png)
+
+Inadequate input validation:
+![alt text](image-1.png)
+
+Direct execution of user provided code: Dont use eval on executing user input code on server, which causes them to run the js code which will be malicious
+![alt text](image-2.png)
+
+Using dangerous function:
+![alt text](image-3.png)
+
+Insecure deserialization:
+![alt text](image-4.png)
