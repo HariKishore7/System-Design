@@ -1,0 +1,83 @@
+Network Optimization:
+
+- Critical rendering path:
+![alt text](image.png)
+
+- Minimize the http requests
+![alt text](image-1.png)
+
+- Async Javascript
+![alt text](image-2.png)
+
+- Avoid redirection
+Even if we hit http:// the website redirects to https:// like flipkart.
+https://hstspreload.org
+
+- Resousrce hinting
+![alt text](image-3.png)
+preconnect(connect to specific cross origin server in advance)
+<link rel="preconnect" href="https://cdn.glitch.global" crossorigin />
+![alt text](image-4.png)
+
+dns-prefetch(does DNS lookup in advance)
+<link rel="dns-prefetch" href="https://cdn.glitch.global" crossorigin />
+![alt text](image-5.png)
+
+preload(Initiate early request to resource for rendering the page)
+<link rel="preload"
+    href="https://cdn.glitch.global/db01a8e4-9230-4c5c-977d-85d0e0c3e74c/image-1.jpg?v=1669198400523" as="image" />
+<link rel="preload" href="/font.woff2" as="font" crossorigin/>
+![alt text](image-6.png)
+
+prefetch(load resources which are needed in near future with low-priority - future)
+<link rel="prefetch" href="/next-page.css" as="style" />
+
+prerender(loads entire page and all its dependency in background which display hidden)
+<link rel="prerender" href="blog.html" />
+
+Read: https://web.dev/learn/performance/resource-hints
+
+- Resource Hint priority
+![alt text](image-7.png)
+onload="this.rel='stylesheet'"
+This helps in downloading the stylesheet as preload, then it'll be convertes it to stylesheet so that it gets parsed.
+The high priority gets loaded first, then the low.
+<img
+    src="https://cdn.glitch.global/db01a8e4-9230-4c5c-977d-85d0e0c3e74c/image-4.jpg?v=1669198402935"
+    alt="Image 4"
+    class="image"
+    fetchPriority="high"
+/>
+Read: https://web.dev/articles/fetch-priority
+
+- Early hints
+![alt text](image-8.png)
+Read: https://developer.chrome.com/docs/web-platform/early-hints
+Example:
+GET /main.html
+Host: example.com
+User-Agent: [....] Chrome/103.0.0.0 [...]
+103 Early Hints
+Link: <https://fonts.google.com>; rel=preconnect
+Link: </main.css>; rel=preload; as=style
+Link: </common.js>; rel=preload; as=script
+
+- HTTP updgrade methods(http1.1 vs http2 vs http3)
+![alt text](image-9.png)
+![alt text](image-10.png)
+Http1 -> it can make 6 paralle requests only, until any one of it completes others will be on hold and uses http://
+Http2 -> this works on purely https:// and also needs ssl certificates, this will make multiple parallel requests unline http1
+https://github.com/namastedev/namaste-frontend-system-design/blob/master/Performance/Network%20Optimization/example4/index.js
+https3 -> used for streaming like youtube and netflix
+
+- Compression: gzip, brotli
+This is used to compress the content using library which comes from server.
+brotli compression is br, main.bundle.js.br
+![alt text](image-12.png)
+![alt text](image-11.png)
+Read: https://web.dev/articles/codelab-text-compression-brotli
+
+- HTTPS cahing: cahce control
+cache-control, expire, etag, last-modified
+
+- Caching using service workers

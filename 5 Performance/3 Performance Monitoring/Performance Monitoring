@@ -1,0 +1,31 @@
+Performance Monitoring:
+https://web.dev/performance -> For deep info about performance.
+
+![alt text](image.png)
+
+Core web vitals:
+
+Largest Contentful paint: How much time it took to render the page, so that the user can consume.
+First Input delay: Once after we click on something, and the time it took to return the response. The delay is call FID.
+Cumulative Layout Shift: When user performs a scroll, and when the page has loaded something new, or expanded the image, or something got loaded at that point called as CLS.
+
+![alt text](image-1.png)
+
+![alt text](image-2.png)
+
+![alt text](image-3.png)
+https://clarity.microsoft.com/ -> to track performance stuff like FCP, LCP, CLS
+https://sentry.io/welcome/ -> to track performance
+From Devtools also we can check the performmance metrics using Performance tab and lighthouse.
+
+
+![alt text](image-4.png)
+https://web.dev/articles/inp
+
+![alt text](image-5.png)
+
+![alt text](image-6.png)
+
+
+
+

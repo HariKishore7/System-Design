@@ -1,0 +1,25 @@
+Rendering Pattern:
+
+![alt text](image.png)
+![alt text](image-1.png)
+
+Hydration -> means it adds listeners to the web page for interactions after javascript got rendered on the screen.
+
+![alt text](image-2.png)
+
+In CSR, initially browser is going to load html from client side. https://github.com/namastedev/namaste-frontend-system-design/blob/master/Performance/RenderingPatterns/page-router/src/pages/csr-page.js
+
+In SSR, server is going to load html from server then the hydration will happen. https://github.com/namastedev/namaste-frontend-system-design/blob/master/Performance/RenderingPatterns/page-router/src/pages/ssr-page.js
+
+In SSG, at the time of build itself it'll create a static site, when the browser hits it instantly gives, this can be used for blogs and for static sites where data won't change overtime.
+![alt text](image-3.png). https://github.com/namastedev/namaste-frontend-system-design/blob/master/Performance/RenderingPatterns/page-router/src/pages/ssg-page.js
+
+![alt text](image-4.png)
+![alt text](image-5.png)
+
+React Server Component: https://vercel.com/blog/understanding-react-server-components
+We can make few of the components to render on server and few on client.
+So to make it to run on server, 'use server"
+To make it run on the client, 'use client'.
+https://github.com/namastedev/namaste-frontend-system-design/blob/master/Performance/RenderingPatterns/app-router/src/app/tutorial.js
+![alt text](image-6.png)
