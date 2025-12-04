@@ -1,0 +1,7 @@
+Indexed DB:
+
+![alt text](image.png)
+Refer: https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API
+
+To use indexedDB we can use dexie.js : https://dexie.org/docs/Tutorial/Hello-World
+Its a straight forward methods to leverage indexedDB

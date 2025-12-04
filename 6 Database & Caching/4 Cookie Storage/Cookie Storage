@@ -1,0 +1,13 @@
+Cookie Storage:
+
+![alt text](image.png)
+Security: XSS, CSRF
+
+On server we can clear the cookie or storage with a header called 'Clear-Site-Data'.
+
+app.get('/logout', (req, res) => {
+    res.setHeader('Clear-Site-Data', '"cache", "cookies", "storage"')
+    res.redirect('/');
+})
+
+Refer: https://github.com/namastedev/namaste-frontend-system-design/blob/master/Databases%26Caching/cookieStorage/public/index.html
