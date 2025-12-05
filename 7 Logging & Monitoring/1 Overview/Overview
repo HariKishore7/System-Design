@@ -1,0 +1,15 @@
+- Capture
+  - User interactions
+  - Performance Metric
+  - Resource errors
+- Monitoring
+  - Alerting
+- Fix
+  - Prioritization
+  - Debugging
+  - Mitigation
+
+![alt text](image.png)
+
+Logs:
+Collect -> Monitor -> Fix

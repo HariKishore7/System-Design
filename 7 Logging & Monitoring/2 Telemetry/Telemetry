@@ -1,0 +1,18 @@
+Telemetry:
+
+![alt text](image.png)
+
+- Custom events
+  - Purchases(like cart)
+  - Feature usage: Login
+
+
+Tools:
+- MS clarity -> https://clarity.microsoft.com/demo/projects/view/3t0wlogvdz/dashboard?date=Last%203%20days
+- Google Analytics
+- Sentry
+- LogRocket
+- Open Telemetry
+
+Correlation id
+Feature Flags -> kind of A/B testing which enables certain features to a set of users only.
