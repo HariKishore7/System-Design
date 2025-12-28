@@ -1,0 +1,41 @@
+Focus Management:
+
+![alt text](image.png)
+![alt text](image-1.png)
+
+TabNavigation: below tags have by default navigation. and also the same can be achieved with tabindex.
+<a><button><input><select><iframe><textarea>
+
+tabindex="0 | 1, 2, 3... | -1"
+
+tabindex = "0" does not impact the domtree order
+
+Refer: https://github.com/namastedev/namaste-frontend-system-design/tree/master/Accessibility
+
+keyboard shortcut:
+Like on a specific website if we want to implement if a person enters a character and an action to be done like below.
+![alt text](image-2.png)
+
+Skip links:
+
+So every time we navigate the website thru the tabs, and if we select anything under any option that takes us to a new page, but if we navigate again, it starts from the root of the page(navigationbar), instead of that we can directly skip to the content, using the same button which is only visible at the start, and hides automatically once after we navigate.
+![alt text](image-3.png)
+
+https://github.com/namastedev/namaste-frontend-system-design/blob/master/Accessibility/example4.html
+
+This appears once after we click on tab button, it'll appear and if we click, we get to the main page, otherwise thru navigation bar.
+
+Active Element:
+![alt text](image-4.png)
+It's like when we click on something and that takes us to a model and once the model is closed, it should take us back to focus where we clicked last time.
+
+Tab Trapping:
+if modal is open, focus should always be insisde modal.
+
+https://github.com/namastedev/namaste-frontend-system-design/blob/master/Accessibility/example5.html
+
+Page Navigation:
+![alt text](image-5.png)
+We can directly skip to the content.
+And, the other page should be aware of from which page the action came from. we can use aria-live
+We can directly focus to the main content on the page, instead of navigation and all.

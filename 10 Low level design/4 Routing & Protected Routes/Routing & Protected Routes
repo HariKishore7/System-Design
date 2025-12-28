@@ -1,0 +1,32 @@
+Routing & Protected Routes:
+
+An application should be having routes, nested routes and protected routes, all should be taken care before designing the app, coz the web crawlers will degrade the seo if the routes gets changed.
+
+Protected routes: These are just to make sure only authenticated people access the specific pages, if they don't login, it'll take them to login page by default.
+
+<BrowserRouter>
+    <Routes>
+        <Route path="/" element={<Body />}></Route>
+        <Route element={<ProtectedRoute />}>
+            <Route path="/team" element={<Team />}></Route>
+            <Route path="/team" element={<Help />}></Route>
+        </Route>
+        <Route path="/about" element={<About lang={lang} />}></Route>
+    </Routes>
+</BrowserRouter>
+
+Instead of children which is being sent to the protectedRoue element, react-router-dom will give it as "Outlet" and can be used to define any number of routes inside it.
+
+import { Outlet, Navigate } from "react-router-dom";
+
+const ProtectedRoute = () => {
+  // Write Authentication Logic
+  // Make login APi call, ceck if token valid
+  const isAuthenticated = false;
+
+  return isAuthenticated ? <Outlet /> : <Navigate to="/login" />;
+};
+export default ProtectedRoute;
+
+https://github.com/namastedev/namaste-frontend-system-design/blob/master/LLD/app/src/components/ProtectedRoute.js
+

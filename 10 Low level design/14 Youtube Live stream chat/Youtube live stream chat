@@ -1,0 +1,4 @@
+Youtube live stream chat:
+
+Youtube uses polling to fetch the live stream chat, coz, it's near real time, for every 5 sec, it'll make an api call to fetch.. If it's a websocket connection, it'll make n number of calls for every msg, it's not necesssarily needs to be a real time chat.
+![alt text](image.png)

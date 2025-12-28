@@ -1,0 +1,17 @@
+Microfrontend:
+
+Microfrontend = breaking UI info smaller, autonomous apps that work together like a single app.
+
+![alt text](image.png)
+![alt text](image-1.png)
+
+abc.com/flight -> this can be developed by react
+abc.com/trains -> this can be developed by angular
+abc.com/hotels -> this can be developed by next/vue js
+
+![alt text](image-2.png)
+![alt text](image-3.png)
+
+![alt text](image-4.png)
+![alt text](image-5.png)
+![alt text](image-6.png)

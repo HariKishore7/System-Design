@@ -1,0 +1,17 @@
+News Media Feed (Facebook, Twitter):
+
+![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
+
+![alt text](image-3.png)
+https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
+
+![alt text](image-4.png)
+Virtualization -> It'll show only few items on the frontend, and all the items doesn't need to be on DOM, only limited items we render and keeps in dom, others will be unloaded from the dom.
+
+https://draftjs.org/
+
+![alt text](image-5.png)
+![alt text](image-6.png)
+

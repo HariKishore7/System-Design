@@ -1,0 +1,29 @@
+Diagram Tools (Excalidraw): https://excalidraw.com/
+
+![alt text](image.png)
+
+![alt text](image-1.png)
+
+![alt text](image-2.png)
+![alt text](image-3.png)
+https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API
+https://developer.mozilla.org/en-US/docs/Web/SVG
+Refer: https://github.com/namastedev/namaste-frontend-system-design/blob/master/HLD/DrawingTools/example1/canvas.html
+https://github.com/namastedev/namaste-frontend-system-design/blob/master/HLD/DrawingTools/example1/svg.html
+
+Canvas - Single dom will handle everything
+SVG - Adds paths for every draw down.
+
+![alt text](image-4.png)
+https://github.com/namastedev/namaste-frontend-system-design/blob/master/HLD/DrawingTools/example2/index.html
+
+![alt text](image-5.png)
+Sync b/w Browser tabs -> localStorage will only be able to  sync b/w tabs not indexedDB
+https://github.com/namastedev/namaste-frontend-system-design/blob/master/HLD/DrawingTools/example3/index.html
+
+Using indexedDB can be done by broadCastChannel
+![alt text](image-6.png)
+
+https://www.w3schools.com/graphics/canvas_intro.asp
+![alt text](image-7.png)
+https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API#libraries

@@ -1,0 +1,3 @@
+Config driven UI:
+
+The config json will come from the backend along with css like height and width.

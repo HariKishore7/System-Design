@@ -1,0 +1,44 @@
+E-commerce App (Amazon, Flipkart):
+
+Design configurable UI
+https://www.youtube.com/watch?v=6z7ZXb4ntbE&list=PL4CFloQ4GGWICE0Tz6iXKfN3XWkXRlboU&index=10
+
+![alt text](image.png)
+i18n/i10n -> used for localization purposes, like language, currency for every country.
+
+![alt text](image-1.png)
+PG: payment gateway
+
+![alt text](image-2.png)
+
+API: REST/graphQL
+![alt text](image-3.png)
+
+![alt text](image-4.png)
+
+SEO
+![alt text](image-7.png)
+
+https://www.flipkart.com/sitemap
+https://www.flipkart.com/robots.txt -> what are the pages to crawl, and what are not important, what are allowed and not allowed, what are the pages to index.
+# cart
+User-agent: *
+Disallow: /viewcart -> this means it will not index these and are not allowed the webpage to access/show
+
+# Something related to carousel and recommendation carousel
+User-agent: *
+Disallow: /dynamic/
+
+https://www.amazon.in/robots.txt
+Disallow: /gp/registry/wishlist/
+Disallow: /wishlist/
+Allow: /wishlist/universal* -> ![alt text](image-5.png)
+Allow: /wishlist/vendor-button*
+Allow: /wishlist/get-button*
+
+Canonical: If there are 5 duplicate page, web crawler gets confused, so canonical will inform which is original one
+![alt text](image-6.png)
+
+Internationalization/Localization
+![alt text](image-8.png)
+Diff countries have diff colors of usage and icons and their meanings.

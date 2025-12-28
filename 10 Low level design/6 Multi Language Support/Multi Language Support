@@ -1,0 +1,13 @@
+Multi Language Support:
+
+This can be developed using the config driven based, where the data(config) comes from backend whenever the language changes based on it we can render it on the frontend.
+
+<select value={lang} onChange={(e) => setLang(e.target.value)}>
+    <option value="en">English</option>
+    <option value="hi">Hindi</option>
+    <option value="sp">Spanish</option>
+    <option value="ru">Russian</option>
+</select>
+
+https://github.com/namastedev/namaste-frontend-system-design/blob/master/LLD/app/src/utils/langConstant.js
+https://github.com/namastedev/namaste-frontend-system-design/blob/master/LLD/app/src/components/About.js

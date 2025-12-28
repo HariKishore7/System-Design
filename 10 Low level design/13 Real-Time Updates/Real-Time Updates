@@ -1,0 +1,17 @@
+Real-Time Updates:
+
+1. API polling -> Login polling
+2. Server Side events
+3. Web Sockets
+
+1. API Polling: The client calls every 5 seconds to server to get the updated data, so every 5 seconds it'll keep on calling API even thought there is an updated data or not.
+![alt text](image.png)
+2. Long Polling: The client calls every 5 seconds to server to get the data, but unlike API polling, coz, if there is a data, it'll return, and if client calls again after 5 seconds, but there is not updated data, the server halts the API, waits till it gets the updated data, once it has new data then it'll return the data and no extra call will be made till that time.
+![alt text](image-1.png)
+3. Server side events: The client will subscribe to the server, so whenever the server has the data, it'll send it immediately, if it doesn't have ay data, then it'll not send any data till it has some data.
+![alt text](image-2.png)
+4. Web Sockets: The connection will be made initially, then the client can call any number of times and the server can send the data any number of times to server. So this is called duplex.
+![alt text](image-3.png)
+
+Polling vs Web Sockets:
+![alt text](image-4.png)

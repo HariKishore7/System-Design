@@ -1,0 +1,17 @@
+Screen Reader:
+
+![alt text](image.png)
+![alt text](image-1.png)
+https://web.dev/learn/accessibility/welcome
+![alt text](image-2.png)
+
+Accessibility tree is going to be created via DOM+Accessibility and this can be viewed in dev tools on right side
+![alt text](image-3.png)
+
+https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Guides/Techniques
+
+https://web.dev/learn/accessibility/aria-html
+
+![alt text](image-4.png)
+
+Refer: https://github.com/namastedev/namaste-frontend-system-design/blob/master/Accessibility/example1/withA11y.html

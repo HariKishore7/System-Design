@@ -1,0 +1,72 @@
+Infinite Scroll:
+
+To do that, below are the few things to know.
+
+window.innerHeight -> the visible page height, means whatever we see on the UI is the whole length of innerHeight.
+![alt text](image.png) -> 458 is bcoz, dev tools is occupying half of it, so only UI length will be considered.
+![alt text](image-1.png) -> 601, as the height got increased.
+
+document.body.scrollHeight
+![alt text](image-2.png) -> 6359, is the whole height of the website.
+
+window.scrollY
+![alt text](image-3.png) -> 0, as the scroll bar is at full top and not moved yet.
+![alt text](image-4.png) -> 669, as the scroll bar was moved a bit.
+![alt text](image-5.png) -> 5760, as it's fully scrolled down.
+
+
+window.innerHeight + window.scrollY == document.body.scrollHeight
+![alt text](image-6.png) -> false, as the scroll bar is at top
+![alt text](image-7.png) -> false, as the scroll bar is at mid
+![alt text](image-8.png) -> true, as the scroll bar is at full bottom
+
+scrollY will only consider till the top of the page scrolled, not till the bottom.
+innerHeight will only consider the visible part of the page height
+so, scrollY + innerHeight = total height of the page.
+
+
+
+Below is the code for infinite scroll:
+
+import { useEffect, useState } from 'react';
+import { MemeCard } from './MemeCard';
+import Shimmer from './Shimmer';
+
+function App() {
+  const [memes, setMemes] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+
+  useEffect(() => {
+    fetchMemes();
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const handleScroll = () => {
+    const scrolled = window.innerHeight + window.scrollY;
+    const total = document.body.scrollHeight;
+    if (Math.ceil(scrolled) >= Math.ceil(total)) {
+      fetchMemes();
+    }
+  }
+
+  const fetchMemes = async () => {
+    setIsLoading(true);
+    const response = await fetch("https://meme-api.com/gimme/10");
+    const json = await response.json();
+    setMemes((memes) => [...memes, ...json.memes]);
+    setIsLoading(false);
+  }
+  return (
+    <div className='flex flex-wrap'>
+      {
+        memes.map((item, index) => {
+          return <MemeCard key={index} data={item} />
+        })
+      }
+      {isLoading && <Shimmer />}
+    </div>
+  )
+}
+
+export default App

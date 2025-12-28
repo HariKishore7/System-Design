@@ -1,0 +1,9 @@
+Color Contrast:
+
+The website should be fairly visible even for the partially eye complicated persons. The colors of the website as well as the font size's should be proper and visible.
+![alt text](image.png)
+
+https://web.dev/learn/accessibility/color-contrast
+
+System preference can be used for prefers-color-scheme.
+

@@ -1,0 +1,27 @@
+Video Streaming (Netflix): https://www.youtube.com/watch?v=-Sn48geZruk&list=PL4CFloQ4GGWICE0Tz6iXKfN3XWkXRlboU&index=6 -> check this as well
+
+![alt text](image.png)
+![alt text](image-1.png)
+-Maifest file
+-Subtitle file
+![alt text](image-2.png)
+![alt text](image-3.png)
+![alt text](image-4.png)
+
+Video player
+1. Html VIdeo tag -> https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/video
+2. Media source API -> https://developer.mozilla.org/en-US/docs/Web/API/MediaSource
+https://www.media-chrome.org/
+https://videojs.org/getting-started
+https://videojs.org/advanced/?video=disneys-oceans
+https://shaka-player-demo.appspot.com/demo/#build=uncompiled
+
+![alt text](image-5.png)
+https://web.dev/articles/media-mse-basics
+
+Performance:
+![alt text](image-6.png)
+https://developer.mozilla.org/en-US/docs/Web/API/Media_Capabilities_API
+
+
+

@@ -1,0 +1,24 @@
+Progressive Web Applications (PWAs): It's a website, but behaves like an app in android or iOS
+
+It works only when service worker and manifest is available.
+![alt text](image.png)
+
+The website page can be added as an app in mobile.
+And can be used as an offline app.
+Background sync, ex: whatsapp, even on offline we send a msg, once the network available, it'll send the msg.
+Responsive & Mobile first.
+![alt text](image-1.png), the pwa can access mobile api's
+
+https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json
+
+To write pwa, the js needs manifest.json file to work on.
+
+search for generate manifest.json
+https://progressier.com/pwa-manifest-generator
+https://app-manifest.firebaseapp.com/
+
+manifest.json to be liked to html page.
+
+https://progressier.com/what-web-can-do-today
+
+https://web.dev/case-studies/flipkart
