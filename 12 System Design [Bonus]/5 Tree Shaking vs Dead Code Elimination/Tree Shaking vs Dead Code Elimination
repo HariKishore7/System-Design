@@ -1,0 +1,6 @@
+Tree Shaking vs Dead Code Elimination:
+
+![alt text](image.png)
+if the env is prod, then debug() will be eleiminated.
+
+![alt text](image-1.png)

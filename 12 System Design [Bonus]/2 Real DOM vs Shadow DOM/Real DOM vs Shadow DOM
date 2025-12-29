@@ -1,0 +1,8 @@
+Real DOM vs Shadow DOM:
+
+Shadow dom is used for encapsulating some components which real dom can't effect in terms of any changes, without its permission.
+![alt text](image.png)
+![alt text](image-1.png)
+https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_shadow_DOM
+
+![alt text](image-2.png)
